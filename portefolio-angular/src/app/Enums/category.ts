@@ -1,7 +1,7 @@
 export enum Category {
-  Frontend, 
-  Backend,
-  DevOps,
-  Data,
-  AI
+  Frontend = "Frontend",
+  Backend = "Backend",
+  DevOps = "DevOps",
+  Data = "Data",
+  AI = "AI",
 }

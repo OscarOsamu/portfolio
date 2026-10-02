@@ -4,6 +4,7 @@ export enum Technology {
   CSharp = "C#",
   CSS = "CSS",
   Docker = "Docker",
+  Django = "Django",
   HTML = "HTML",
   Java = "Java",
   JS = "JavaScript",

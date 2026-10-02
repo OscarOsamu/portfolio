@@ -1,0 +1,84 @@
+:host
+  display: block
+  color: var(--p-text-color, #1f2937)
+
+.company-logo
+  display: grid
+  width: 3.5rem
+  height: 3.5rem
+  place-items: center
+  overflow: hidden
+  border: 1px solid var(--p-content-border-color, #e5e7eb)
+  border-radius: 50%
+  background: var(--p-content-background, #fff)
+
+.company-logo__image
+  display: block
+  width: 100%
+  height: 100%
+  padding: 0.3rem
+  object-fit: contain
+
+.experience-card
+  padding: 1rem 1.125rem
+  border: 1px solid var(--p-content-border-color, #e5e7eb)
+  border-radius: 0.875rem
+  background: var(--p-content-background, #fff)
+  box-shadow: 0 2px 8px rgb(15 23 42 / 5%)
+  transition: border-color 160ms ease, box-shadow 160ms ease
+
+  &:hover
+    border-color: var(--p-primary-color, #6366f1)
+    box-shadow: 0 6px 18px rgb(15 23 42 / 9%)
+
+.experience-card__header
+  margin-bottom: 0.75rem
+
+.experience-card__position
+  margin: 0
+  font-size: 1rem
+  font-weight: 650
+  line-height: 1.4
+
+.experience-card__company
+  margin-top: 0.2rem
+  color: var(--p-text-color, #374151)
+  font-size: 0.9rem
+
+.experience-card__dates
+  margin-top: 0.25rem
+  color: var(--p-text-muted-color, #6b7280)
+  font-size: 0.8rem
+
+.experience-card__description
+  margin: 0 0 1rem
+  color: var(--p-text-color, #374151)
+  font-size: 0.9rem
+  line-height: 1.6
+
+.experience-card__tags
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  gap: 0.5rem
+
+.experience-tag
+  padding: 0.3rem 0.6rem
+  border: 1px solid var(--p-content-border-color, #e5e7eb)
+  border-radius: 999px
+  background: var(--p-surface-100, #f3f4f6)
+  color: var(--p-text-color, #374151)
+  font-size: 0.75rem
+  line-height: 1.2
+
+.experience-tag--category
+  border-color: color-mix(in srgb, var(--p-primary-color, #6366f1) 25%, transparent)
+  background: color-mix(in srgb, var(--p-primary-color, #6366f1) 8%, transparent)
+  color: var(--p-primary-color, #4f46e5)
+
+:host ::ng-deep .experience-timeline .p-timeline-event-content
+  padding-bottom: 1.25rem
+
+@media (max-width: 40rem)
+  .experience-card
+    padding: 0.875rem
