@@ -38,6 +38,8 @@ jobs:
         run: npm ci
 
       - name: Build Angular
+        env:
+          PRIMENG_LICENSE: ${{ secrets.PRIMENG_LICENSE }}
         run: npm run build -- --base-href /${{ github.event.repository.name }}/
 
       - name: Setup Pages
