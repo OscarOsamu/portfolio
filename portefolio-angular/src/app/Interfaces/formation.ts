@@ -1,4 +1,4 @@
-export interface Studies {
+export interface Formation {
   id: number,
   name: string,
   startDate: Date,

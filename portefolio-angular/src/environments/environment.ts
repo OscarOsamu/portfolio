@@ -1,3 +1,3 @@
 export const environment = {
-  primengLicense: ''
+  primengLicense: "eyJpZCI6IjFhNGIxZWJmLTAzMmItNDI1ZS05N2EwLThkMDJiNGM1MTRkYiIsInByb2R1Y3QiOiJwcmltZXVpIiwidGllciI6ImNvbW11bml0eSIsInR5cGUiOiJkZXYiLCJpYXQiOjE3OTA4NTA1ODksImV4cCI6MTgyMjM4NjU4OX0.suVzF08lhtAKxdneR0NfcfwEpghnAFZYZywOcKJR-FOJZUYhQpQUv_3AqEMeXLWhWRXHodnsrGVUrt8DXPqFBQ"
 };
