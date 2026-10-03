@@ -18,12 +18,14 @@ html
 
 body
   min-height: 100vh;
-  margin: 0;
+  margin: 20;
   background: var(--app-page-background);
   color: var(--p-text-color, #1f2937);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+
+
 
 
 app-root
@@ -35,7 +37,8 @@ app-root
   color: var(--p-text-color, #111827);
   letter-spacing: -0.025em;
   line-height: 1.2;
-  
+
+
 
 
 :where(a)
@@ -66,3 +69,68 @@ app-root
     transition-duration: 0.01ms !important;
 
 
+:root
+  --app-tag-height: 1.8rem
+  --app-tag-radius: 999px
+  --app-tag-font-size: 0.75rem
+  --app-tag-padding: 0 0.65rem
+
+  --app-tag-neutral-bg: #f1f5f9
+  --app-tag-neutral-border: #dbe3ed
+  --app-tag-neutral-text: #334155
+
+  --app-tag-tech: #2563eb
+  --app-tag-category: #7c3aed
+
+.app-tag
+  display: inline-flex
+  box-sizing: border-box
+  min-height: var(--app-tag-height)
+  align-items: center
+  justify-content: center
+  gap: 0.4rem
+  padding: var(--app-tag-padding)
+  border: 1px solid var(--app-tag-border, var(--app-tag-neutral-border))
+  border-radius: var(--app-tag-radius)
+  background: var(--app-tag-bg, var(--app-tag-neutral-bg))
+  color: var(--app-tag-color, var(--app-tag-neutral-text))
+  font-size: var(--app-tag-font-size)
+  font-weight: 600
+  line-height: 1
+  white-space: nowrap
+
+.app-tag--technology
+  --app-tag-bg: color-mix(in srgb, var(--app-tag-tech) 8%, white)
+  --app-tag-border: color-mix(in srgb, var(--app-tag-tech) 24%, white)
+  --app-tag-color: var(--app-tag-tech)
+
+.app-tag--category
+  --app-tag-bg: color-mix(in srgb, var(--app-tag-category) 9%, white)
+  --app-tag-border: color-mix(in srgb, var(--app-tag-category) 26%, white)
+  --app-tag-color: var(--app-tag-category)
+
+.app-tag--language
+  --app-tag-bg: var(--app-tag-neutral-bg)
+  --app-tag-border: var(--app-tag-neutral-border)
+  --app-tag-color: var(--app-tag-neutral-text)
+
+.app-tag__icon
+  width: 1rem
+  height: 1rem
+  flex: 0 0 1rem
+  object-fit: contain
+
+
+
+// PrimeNG Badge: apply the shared dimensions while retaining its accent color.
+.p-badge.app-tag
+  min-width: var(--app-tag-height)
+  height: var(--app-tag-height)
+  padding: var(--app-tag-padding)
+  border: 1px solid color-mix(in srgb, var(--tag-accent, #64748b) 25%, white)
+  border-radius: var(--app-tag-radius)
+  background: color-mix(in srgb, var(--tag-accent, #64748b) 9%, white)
+  color: var(--tag-accent, #475569)
+  font-size: var(--app-tag-font-size)
+  font-weight: 600
+  line-height: 1

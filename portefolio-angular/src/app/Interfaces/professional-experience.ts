@@ -4,13 +4,13 @@ import { Category } from "../Enums/category";
 
 export interface ProfessionalExperience {
   id: number,
-  title: string,
+  titleKey: string,
   company: string,
   companyLogo: string,
   location: string,
   startDate: Date,
   endDate?: Date,
-  description: string,
+  descriptionKey: string,
   technologies: Technology[],
   category: Category[],
   languagesSpoken : Languages[],

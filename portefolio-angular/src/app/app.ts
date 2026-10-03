@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { MainPage } from './Components/main-page/main-page';
+import { LocaleSwitcher } from './Components/locale-switcher/locale-switcher';
 
 @Component({
-  imports: [RouterOutlet, MainPage],
+  imports: [MainPage, LocaleSwitcher],
   selector: 'app-root',
   styleUrl: './app.sass',
   templateUrl: './app.html',

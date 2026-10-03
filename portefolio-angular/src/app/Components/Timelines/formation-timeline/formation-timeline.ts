@@ -3,13 +3,15 @@ import { DatePipe } from '@angular/common';
 import { TimelineModule } from 'primeng/timeline';
 
 import { FormationService } from '../../../Services/formation-service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-formation-timeline',
   standalone: true,
   imports: [
     TimelineModule,
-    DatePipe
+    DatePipe,
+    TranslatePipe
   ],
   styleUrl: './formation-timeline.sass',
   template: `
@@ -30,8 +32,8 @@ import { FormationService } from '../../../Services/formation-service';
       <!-- Formation -->
       <ng-template #content let-formation>
 
-        <h4 i18n class="text-sm leading-4 font-bold">
-          {{ formation.name }}
+        <h4 class="text-sm leading-4 font-bold">
+          {{ formation.nameKey | translate }}
         </h4>
 
         <div class="text-xs leading-4 text-surface-500 dark:text-surface-400 font-italic">
@@ -40,8 +42,8 @@ import { FormationService } from '../../../Services/formation-service';
           {{ formation.schoolPlace }}
         </div>
 
-        <div i18n class="text-sm leading-4 mt-2">
-          {{ formation.description }}
+        <div class="text-sm leading-4 mt-2">
+          {{ formation.descriptionKey | translate }}
         </div>
 
       </ng-template>

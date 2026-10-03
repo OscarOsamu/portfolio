@@ -1,0 +1,30 @@
+<div class="locale-switcher">
+  <button
+    class="locale-switcher__trigger"
+    type="button"
+    aria-haspopup="menu"
+    [attr.aria-label]="'common.language' | translate"
+    [attr.aria-expanded]="isMenuOpen()"
+    (click)="toggleMenu()"
+  >
+    <i class="pi pi-globe" aria-hidden="true"></i>
+    <app-language-tag [language]="currentLanguage().language" />
+  </button>
+
+  @if (isMenuOpen()) {
+    <div class="locale-switcher__menu" role="menu" [attr.aria-label]="'common.language' | translate">
+      @for (locale of locales; track locale.code) {
+        <button
+          class="locale-switcher__option"
+          type="button"
+          role="menuitemradio"
+          [attr.aria-checked]="locale.code === currentLocale()"
+          [class.locale-switcher__option--active]="locale.code === currentLocale()"
+          (click)="selectLocale(locale)"
+        >
+          <app-language-tag [language]="locale.language" />
+        </button>
+      }
+    </div>
+  }
+</div>

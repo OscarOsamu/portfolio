@@ -1,0 +1,77 @@
+{
+  "home": {
+    "title": "Portfolio di OD",
+    "role": "Ingegnere del software",
+    "welcome": "Benvenuti nel mio portfolio! Qui troverete informazioni sui miei progetti, sulle mie competenze e sulla mia esperienza. Esplorate il sito per conoscermi meglio.",
+    "availability": "Al momento sono disponibile e cerco il mio primo impiego. Se il mio profilo vi interessa, non esitate a contattarmi. Sarò lieto di parlare delle opportunità e di come posso contribuire al vostro team."
+  },
+  "tabs": {
+    "education": "Formazione",
+    "educationDescription": "Ecco un elenco delle scuole che ho frequentato:",
+    "experience": "Esperienza professionale",
+    "projects": "Progetti",
+    "projectsDescription": "Ecco alcuni dei miei progetti personali e scolastici. Sfogliateli pure.",
+    "contact": "Contattami",
+    "contactDescription": "Qui trovate i miei contatti."
+  },
+  "contact": {
+    "email": "E-mail:",
+    "phone": "Telefono:",
+    "linkedin": "LinkedIn:"
+  },
+  "common": {
+    "present": "Presente",
+    "language": "Lingua",
+    "projectCard": "Scheda progetto"
+  },
+  "locale": {
+    "en": "Inglese",
+    "fr": "Francese",
+    "it": "Italiano"
+  },
+  "language": {
+    "french": "Francese",
+    "english": "Inglese",
+    "italian": "Italiano"
+  },
+  "category": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps",
+    "data": "Dati",
+    "ai": "IA"
+  },
+  "repo": {
+    "public": "Pubblico",
+    "private": "Privato"
+  },
+  "education": {
+    "epita": {
+      "name": "Laurea magistrale in ingegneria informatica, con specializzazione in sanità e intelligenza artificiale",
+      "description": "Il percorso si concentra sull'ingegneria del software, sugli algoritmi e sull'informatica. Il programma comprende linguaggi di programmazione, strutture dati, basi di dati e metodologie di sviluppo software, con una forte componente pratica grazie a stage e progetti. La specializzazione in sanità e intelligenza artificiale include interoperabilità, sicurezza informatica, analisi dei dati sanitari, apprendimento automatico, apprendimento profondo ed elaborazione del linguaggio naturale."
+    },
+    "cpge": {
+      "name": "Classi preparatorie (PCSI/PC)",
+      "description": "Corsi intensivi di matematica, fisica e chimica in preparazione agli esami di ammissione alle scuole di ingegneria francesi. Qui ho scoperto l'informatica e gli algoritmi e ho deciso di intraprendere questa carriera."
+    },
+    "baccalaureate": {
+      "name": "Baccalauréat francese con il massimo dei voti",
+      "description": "Indirizzi di matematica e fisica-chimica, completati con il massimo dei voti."
+    }
+  },
+  "experience": {
+    "ge": {
+      "title": "Tirocinante frontend",
+      "description": "Da definire"
+    },
+    "space": {
+      "title": "Tirocinante full-stack e DevOps",
+      "description": "Da definire"
+    }
+  },
+  "project": {
+    "portfolio": {
+      "description": "Un portfolio personale realizzato con Angular per presentare i miei progetti e le mie competenze."
+    }
+  }
+}

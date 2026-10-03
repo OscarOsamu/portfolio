@@ -44,6 +44,12 @@ To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use th
 ng test
 ```
 
+## Portfolio data and localization
+
+Portfolio records live in `src/app/Data`, with one module per content type. Services in `src/app/Services` provide access to those datasets.
+
+Runtime translations are JSON files in `public/i18n`, one file per locale (`en.json`, `fr.json`, and `it.json`). Add matching keys to each locale file and use the `translate` pipe in templates or `TranslateService` in TypeScript. The language menu saves the selected locale in browser storage.
+
 ## Running end-to-end tests
 
 For end-to-end (e2e) testing, run:

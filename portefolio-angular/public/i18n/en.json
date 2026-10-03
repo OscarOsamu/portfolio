@@ -1,0 +1,77 @@
+{
+  "home": {
+    "title": "OD Portfolio",
+    "role": "Software Engineer",
+    "welcome": "Welcome to my portfolio! Here you can find information about my projects, skills, and experience. Feel free to explore and learn more about me.",
+    "availability": "I'm currently open to work and looking for my first job, so if you are interested in my profile, please don't hesitate to contact me. I would be happy to discuss potential opportunities and how I can contribute to your team."
+  },
+  "tabs": {
+    "education": "Education",
+    "educationDescription": "Here is a list of the schools I attended:",
+    "experience": "Professional Experience",
+    "projects": "Projects",
+    "projectsDescription": "Here are some of my personal and school projects. Feel free to browse.",
+    "contact": "Contact Me",
+    "contactDescription": "Find my contact information here."
+  },
+  "contact": {
+    "email": "Email:",
+    "phone": "Phone:",
+    "linkedin": "LinkedIn:"
+  },
+  "common": {
+    "present": "Present",
+    "language": "Language",
+    "projectCard": "Project card"
+  },
+  "locale": {
+    "en": "English",
+    "fr": "French",
+    "it": "Italian"
+  },
+  "language": {
+    "french": "French",
+    "english": "English",
+    "italian": "Italian"
+  },
+  "category": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps",
+    "data": "Data",
+    "ai": "AI"
+  },
+  "repo": {
+    "public": "Public",
+    "private": "Private"
+  },
+  "education": {
+    "epita": {
+      "name": "Master's degree in Engineering (Computer Science), specializing in Healthcare and Artificial Intelligence",
+      "description": "Focused on software engineering, algorithms, and computer science. The program covers programming languages, data structures, databases, and software development methodologies, with a strong emphasis on practical experience through internships and projects. My specialization in Healthcare and Artificial Intelligence included interoperability, cybersecurity, healthcare data analysis, machine learning, deep learning, and natural language processing."
+    },
+    "cpge": {
+      "name": "Preparatory Classes (PCSI/PC)",
+      "description": "Intensive courses in mathematics, physics, and chemistry preparing students for the competitive entrance exams to French engineering schools. I discovered computer science and algorithms there and decided to pursue a career in this field."
+    },
+    "baccalaureate": {
+      "name": "French Baccalaureate with Highest Honors",
+      "description": "Specialized in mathematics and physics-chemistry, graduating with highest honors."
+    }
+  },
+  "experience": {
+    "ge": {
+      "title": "Frontend Intern",
+      "description": "To be determined"
+    },
+    "space": {
+      "title": "Full-stack and DevOps Intern",
+      "description": "To be determined"
+    }
+  },
+  "project": {
+    "portfolio": {
+      "description": "A personal portfolio website built with Angular, showcasing my projects and skills."
+    }
+  }
+}

@@ -29,8 +29,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.sass"],
-            "polyfills": ["@angular/localize/init"]
+            "styles": ["src/styles.sass"]
           },
           "configurations": {
             "production": {

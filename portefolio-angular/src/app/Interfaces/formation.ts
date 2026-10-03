@@ -1,9 +1,9 @@
 export interface Formation {
   id: number,
-  name: string,
+  nameKey: string,
   startDate: Date,
   endDate?: Date,
-  description: string,
+  descriptionKey: string,
   schoolName : string,
   schoolPlace : string,
 }

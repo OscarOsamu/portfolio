@@ -1,22 +1,23 @@
 import { Component, input } from '@angular/core';
 import { TagModule } from 'primeng/tag';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { Languages } from './../../../Enums/languages';
 
 @Component({
   selector: 'app-language-tag',
   standalone: true,
-  imports: [TagModule],
+  imports: [TagModule, TranslatePipe],
   styleUrl: './language-tag.sass',
   template: `
     <div class="flex justify-center">
       <p-tag
-        class="language-tag"
+        class="app-tag app-tag--language"
       >
-        <img [src]="imagePath()" [alt]="languageLabel()" class="language-flag" />
+        <img [src]="imagePath()" [alt]="languageLabelKey() | translate" class="app-tag__icon" />
 
         <span class="text-base">
-          {{ languageLabel() }}
+          {{ languageLabelKey() | translate }}
         </span>
       </p-tag>
     </div>
@@ -29,22 +30,22 @@ export class LanguageTag {
     Languages,
     {
       imagePath: string;
-      label: string;
+      labelKey: string;
     }
   > = {
     [Languages.French]: {
       imagePath: 'assets/fr-round-64.png',
-      label: 'French', // TODO: $localize`:@@language.french:French`
+      labelKey: 'language.french',
     },
 
     [Languages.English]: {
       imagePath: 'assets/uk-round-64.png',
-      label: 'English', // TODO /$localize`:@@language.english:English`
+      labelKey: 'language.english',
     },
 
     [Languages.Italian]: {
       imagePath: 'assets/it-round-64.png',
-      label: 'Italian', // TODO : $localize`:@@language.italian:Italian`
+      labelKey: 'language.italian',
     },
   };
 
@@ -52,7 +53,7 @@ export class LanguageTag {
     return this.languageData[this.language()].imagePath;
   }
 
-  languageLabel(): string {
-    return this.languageData[this.language()].label;
+  languageLabelKey(): string {
+    return this.languageData[this.language()].labelKey;
   }
 }

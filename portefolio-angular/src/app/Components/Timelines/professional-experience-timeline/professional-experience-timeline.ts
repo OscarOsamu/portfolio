@@ -4,9 +4,11 @@ import { DatePipe } from '@angular/common';
 import { TimelineModule } from 'primeng/timeline';
 import { LanguageTag } from '../../TagsAndBadges/language-tag/language-tag';
 import { TechTag } from '../../TagsAndBadges/tech-tag/tech-tag';
+import { Category } from '../../../Enums/category';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  imports: [TimelineModule, DatePipe, LanguageTag],
+  imports: [TimelineModule, DatePipe, LanguageTag, TranslatePipe],
   selector: 'app-professional-experience-timeline',
   styleUrl: './professional-experience-timeline.sass',
   templateUrl: './professional-experience-timeline.html',
@@ -18,6 +20,16 @@ import { TechTag } from '../../TagsAndBadges/tech-tag/tech-tag';
 // on the bottom there will be tags for the technologies used, the category of the experience, and the languages spoken
 
 export class ProfessionalExperienceTimeline {
+
+  categoryLabel(category: Category): string {
+    switch (category) {
+      case Category.Frontend: return 'category.frontend';
+      case Category.Backend: return 'category.backend';
+      case Category.DevOps: return 'category.devops';
+      case Category.Data: return 'category.data';
+      case Category.AI: return 'category.ai';
+    }
+  }
 
   private readonly professionalExperienceService = inject(ProfessionalExperienceService);
 

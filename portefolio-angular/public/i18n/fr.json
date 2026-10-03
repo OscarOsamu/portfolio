@@ -1,0 +1,77 @@
+{
+  "home": {
+    "title": "Portfolio d'OD",
+    "role": "Ingénieur logiciel",
+    "welcome": "Bienvenue sur mon portfolio ! Vous y trouverez des informations sur mes projets, mes compétences et mon expérience. N'hésitez pas à parcourir le site pour en apprendre davantage sur moi.",
+    "availability": "Je suis actuellement à la recherche de mon premier emploi. Si mon profil vous intéresse, n'hésitez pas à me contacter. Je serais ravi d'échanger sur les opportunités et sur la manière dont je pourrais contribuer à votre équipe."
+  },
+  "tabs": {
+    "education": "Formation",
+    "educationDescription": "Voici les établissements que j'ai fréquentés :",
+    "experience": "Expérience professionnelle",
+    "projects": "Projets",
+    "projectsDescription": "Voici quelques projets personnels et scolaires. N'hésitez pas à les découvrir.",
+    "contact": "Me contacter",
+    "contactDescription": "Retrouvez mes coordonnées ici."
+  },
+  "contact": {
+    "email": "E-mail :",
+    "phone": "Téléphone :",
+    "linkedin": "LinkedIn :"
+  },
+  "common": {
+    "present": "Aujourd'hui",
+    "language": "Langue",
+    "projectCard": "Carte de projet"
+  },
+  "locale": {
+    "en": "Anglais",
+    "fr": "Français",
+    "it": "Italien"
+  },
+  "language": {
+    "french": "Français",
+    "english": "Anglais",
+    "italian": "Italien"
+  },
+  "category": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps",
+    "data": "Données",
+    "ai": "IA"
+  },
+  "repo": {
+    "public": "Public",
+    "private": "Privé"
+  },
+  "education": {
+    "epita": {
+      "name": "Diplôme d'ingénieur en informatique, spécialité santé et intelligence artificielle",
+      "description": "Formation axée sur le génie logiciel, les algorithmes et l'informatique. Le programme couvre les langages de programmation, les structures de données, les bases de données et les méthodes de développement logiciel, avec une forte place accordée à la pratique au travers de stages et de projets. Ma spécialisation en santé et intelligence artificielle comprend l'interopérabilité, la cybersécurité, l'analyse de données de santé, l'apprentissage automatique, l'apprentissage profond et le traitement automatique du langage naturel."
+    },
+    "cpge": {
+      "name": "Classes préparatoires (PCSI/PC)",
+      "description": "Cours intensifs de mathématiques, de physique et de chimie en préparation aux concours d'entrée des écoles d'ingénieurs françaises. J'y ai découvert l'informatique et les algorithmes, puis décidé de poursuivre dans cette voie."
+    },
+    "baccalaureate": {
+      "name": "Baccalauréat avec mention Très Bien",
+      "description": "Spécialités mathématiques et physique-chimie, obtenues avec la mention Très Bien."
+    }
+  },
+  "experience": {
+    "ge": {
+      "title": "Stagiaire en développement frontend",
+      "description": "À préciser"
+    },
+    "space": {
+      "title": "Stagiaire full-stack et DevOps",
+      "description": "À préciser"
+    }
+  },
+  "project": {
+    "portfolio": {
+      "description": "Un portfolio personnel réalisé avec Angular pour présenter mes projets et mes compétences."
+    }
+  }
+}

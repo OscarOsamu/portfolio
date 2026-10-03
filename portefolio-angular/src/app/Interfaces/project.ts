@@ -5,7 +5,7 @@ import { Technology } from "../Enums/technology";
 export interface Project {
   id: number,
   name : string,
-  description : string,
+  descriptionKey : string,
   category : Category[],
   technologies : Technology[],
   repoStatus : RepoStatus,
