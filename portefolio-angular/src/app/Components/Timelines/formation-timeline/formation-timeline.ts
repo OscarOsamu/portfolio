@@ -17,6 +17,7 @@ import { TranslatePipe } from '@ngx-translate/core';
   template: `
     <p-timeline
       [value]="formations"
+      class="formation-timeline"
     >
 
       <!-- Date -->

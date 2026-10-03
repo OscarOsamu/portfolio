@@ -62,11 +62,11 @@
   "experience": {
     "ge": {
       "title": "Frontend Intern",
-      "description": "To be determined"
+      "description": "Development of a feature for a medical imaging viewer that smartly layouts DICOM images based on input\nUnit and E2E testing\nPerformance evaluation of algorithms\nDocumentation"
     },
     "space": {
       "title": "Full-stack and DevOps Intern",
-      "description": "To be determined"
+      "description": "Migration of a python library to a go library for a Grafana plugin\nImplementation of OAuth via Keycloak on two applications\nDocker containerization and Kubernetes deployment\nDevelopment of a form (with approximately 200 interdependent parameters) and an interactive menu for it, based on space standards\nCreation of YAMCS application configuration YAMLs from this form\nAGILE, QA, and MR reviews"
     }
   },
   "project": {

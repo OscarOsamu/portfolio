@@ -8,7 +8,7 @@ export const professionalExperiencesData: ProfessionalExperience[] = [
     id: 1,
     titleKey: 'experience.ge.title',
     company: 'GE Healthcare',
-    companyLogo: '../../assets/GE-Healthcare-logo.png',
+    companyLogo: 'assets/GE-Healthcare-logo.png',
     location: 'Buc, France',
     startDate: new Date('2026-02-08'),
     endDate: new Date('2026-08-08'),

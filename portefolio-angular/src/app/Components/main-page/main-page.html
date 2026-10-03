@@ -1,5 +1,15 @@
-<h1>{{ 'home.title' | translate }}</h1>
-<h2>{{ 'home.role' | translate }}</h2>
-<p>{{ 'home.welcome' | translate }}</p>
-<p>{{ 'home.availability' | translate }}</p>
-<app-tabs/>
+<div class="main-page-container">
+
+  <div class="main-page__content">
+    <div class="main-page__text">
+      <h1>{{ 'home.title' | translate }}</h1>
+      <h2>{{ 'home.role' | translate }}</h2>
+      <p>{{ 'home.welcome' | translate }}</p>
+      <p>{{ 'home.availability' | translate }}</p>
+    </div>
+  </div>
+  <div class="locale-switcher-container">
+    <app-locale-switcher />
+  </div>
+</div>
+<app-tabs />

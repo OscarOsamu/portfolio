@@ -62,11 +62,11 @@
   "experience": {
     "ge": {
       "title": "Stagiaire en développement frontend",
-      "description": "À préciser"
+      "description": "Réalisation d'une feature d'un viewer dimagerie médical consistant à faire une mise en page intelligente en fonction des images DICOM en entrée\nRéalisation de tests unitaires et E2E\nEvaluation de performance d'algorithmes\nDocumentation"
     },
     "space": {
       "title": "Stagiaire full-stack et DevOps",
-      "description": "À préciser"
+      "description": "Migration d'une librairie Python vers Go pour un plugin Grafana'\nMise en place d'OAuth via Keycloak sur deux applications\nContainerisation Docker et déploiement Kubernetes\nRéalisation d'un formulaire (pouvant contenir environ 200 parametres interdépendants) et d'un menu interactif pour ce dernier, à partir des normes du spacial\nCréation des YAMLs de configuration de l'application YAMCS à partir de ce formulaire\nAGILE, QA et MR reviews"
     }
   },
   "project": {

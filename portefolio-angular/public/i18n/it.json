@@ -62,11 +62,11 @@
   "experience": {
     "ge": {
       "title": "Tirocinante frontend",
-      "description": "Da definire"
+      "description": "Sviluppo di una funzionalità per un visualizzatore di immagini mediche che dispone in modo intelligente le immagini DICOM in base all'input\nTest unitari ed E2E\nValutazione delle prestazioni degli algoritmi\nDocumentazione"
     },
     "space": {
       "title": "Tirocinante full-stack e DevOps",
-      "description": "Da definire"
+      "description": "Migrazione di una libreria Python a una libreria Go per un plugin Grafana\nImplementazione di OAuth tramite Keycloak su due applicazioni\nContainerizzazione Docker e distribuzione Kubernetes\nSviluppo di un modulo (con circa 200 parametri interdipendenti) e di un menu interattivo basato sugli standard spaziali\nCreazione dei file YAML di configurazione dell'applicazione YAMCS da questo modulo\nAGILE, QA e revisioni MR"
     }
   },
   "project": {
