@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import {Tabs} from '../tabs/tabs';
+import {Tabs} from '../Projects/projects-tab-content/tabs/tabs';
 import { LocaleSwitcher } from '../locale-switcher/locale-switcher';
 
 @Component({

@@ -23,12 +23,19 @@ export class ProjectsService {
     return this.featuredProjectsIds.map(id => this.getProjectById(id)).filter(project => project !== undefined) as Project[];
   }
 
-  getProjectsByFilter(category?: Category[], repoStatus?: RepoStatus, technologie?: Technology[]) : Project[] {
+  getProjectsByFilter(
+    category?: Category[],
+    repoStatus?: RepoStatus[],
+    technologie?: Technology[],
+    featuredOnly = false,
+  ): Project[] {
     return this.projects.filter(project => {
-      const categoryMatch = category ? category.some(cat => project.category.includes(cat)) : true;
-      const repoStatusMatch = repoStatus ? project.repoStatus === repoStatus : true;
-      const technologieMatch = technologie ? technologie.some(tech => project.technologies.includes(tech)) : true;
-      return categoryMatch && repoStatusMatch && technologieMatch;
+      const categoryMatch = !category?.length || category.some(cat => project.category.includes(cat));
+      const repoStatusMatch = !repoStatus?.length || repoStatus.includes(project.repoStatus);
+      const technologyMatch = !technologie?.length || technologie.some(tech => project.technologies.includes(tech));
+      const featuredMatch = !featuredOnly || this.featuredProjectsIds.includes(project.id);
+
+      return categoryMatch && repoStatusMatch && technologyMatch && featuredMatch;
     });
   }
 

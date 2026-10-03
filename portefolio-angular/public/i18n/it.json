@@ -42,8 +42,26 @@
     "ai": "IA"
   },
   "repo": {
+    "none": "Nessun repository",
     "public": "Pubblico",
     "private": "Privato"
+  },
+  "projects": {
+    "filtersLabel": "Filtri dei progetti",
+    "category": "Categoria",
+    "technology": "Tecnologia",
+    "repositoryStatus": "Stato GitHub",
+    "allCategories": "Tutte le categorie",
+    "allTechnologies": "Tutte le tecnologie",
+    "allStatuses": "Tutti gli stati",
+    "featuredOnly": "Solo progetti in evidenza",
+    "clearFilters": "Cancella tutti i filtri",
+    "resultCount": "{{count}} progetti",
+    "noResults": "Nessun progetto corrisponde a questi filtri.",
+    "featured": "In evidenza",
+    "technologies": "Tecnologie del progetto",
+    "sourceCode": "Vedi il codice sorgente",
+    "liveDemo": "Demo online"
   },
   "education": {
     "epita": {

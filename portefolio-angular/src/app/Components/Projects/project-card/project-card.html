@@ -1,1 +1,45 @@
-<p>{{ 'common.projectCard' | translate }}</p>
+<article class="project-card">
+	@if (project().image) {
+		<img class="project-card__image" [src]="project().image" [alt]="project().name" />
+	}
+
+	<div class="project-card__content">
+		<div class="project-card__topline">
+			<span class="project-card__status" [class.project-card__status--public]="project().repoStatus === repoStatus.Public">
+				{{ repoStatusLabelKey() | translate }}
+			</span>
+			@if (featured()) {
+				<span class="project-card__featured">{{ 'projects.featured' | translate }}</span>
+			}
+		</div>
+
+		<h3>{{ project().name }}</h3>
+		<p class="project-card__description">{{ project().descriptionKey | translate }}</p>
+
+		<div class="project-card__tags" aria-label="{{ 'projects.technologies' | translate }}">
+			@for (category of project().category; track category) {
+				<span class="project-card__tag project-card__tag--category">
+					{{ ('category.' + category.toLowerCase()) | translate }}
+				</span>
+			}
+			@for (technology of project().technologies; track technology) {
+				<span class="project-card__tag">{{ technology }}</span>
+			}
+		</div>
+
+		@if (project().repoLink || project().demoLink) {
+			<div class="project-card__actions">
+				@if (project().repoLink) {
+					<a [href]="project().repoLink" target="_blank" rel="noopener noreferrer">
+						{{ 'projects.sourceCode' | translate }}
+					</a>
+				}
+				@if (project().demoLink) {
+					<a class="project-card__demo" [href]="project().demoLink" target="_blank" rel="noopener noreferrer">
+						{{ 'projects.liveDemo' | translate }}
+					</a>
+				}
+			</div>
+		}
+	</div>
+</article>

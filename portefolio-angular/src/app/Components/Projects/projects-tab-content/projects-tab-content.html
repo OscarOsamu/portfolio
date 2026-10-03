@@ -1,1 +1,61 @@
-<p>{{ 'tabs.projects' | translate }}</p>
+<section class="projects" aria-label="{{ 'tabs.projects' | translate }}">
+	<div class="projects__toolbar">
+		<button class="projects__clear" type="button" (click)="clearFilters()">
+			{{ 'projects.clearFilters' | translate }}
+		</button>
+	</div>
+
+	<div class="projects__filters" role="group" aria-label="{{ 'projects.filtersLabel' | translate }}">
+		<div class="projects__field">
+			<span>{{ 'projects.category' | translate }}</span>
+			<app-multi-select-filter
+				id="category-filter"
+				[options]="categories()"
+				[selected]="selectedCategory()"
+				[label]="'projects.category' | translate"
+				[placeholder]="'projects.allCategories' | translate"
+				(selectionChange)="onCategoryChange($event)" />
+		</div>
+
+		<div class="projects__field">
+			<span>{{ 'projects.technology' | translate }}</span>
+			<app-multi-select-filter
+				id="technology-filter"
+				[options]="technologies()"
+				[selected]="selectedTechnology()"
+				[label]="'projects.technology' | translate"
+				[placeholder]="'projects.allTechnologies' | translate"
+				(selectionChange)="onTechnologyChange($event)" />
+		</div>
+
+		<div class="projects__field">
+			<span>{{ 'projects.repositoryStatus' | translate }}</span>
+			<app-multi-select-filter
+				id="repository-status-filter"
+				[options]="repositoryStatuses()"
+				[selected]="selectedRepoStatusValues()"
+				[label]="'projects.repositoryStatus' | translate"
+				[placeholder]="'projects.allStatuses' | translate"
+				(selectionChange)="onRepoStatusChange($event)" />
+		</div>
+
+		<label class="projects__toggle">
+			<input type="checkbox" [checked]="featuredOnly()" (change)="onFeaturedChange($event)" />
+			<span>{{ 'projects.featuredOnly' | translate }}</span>
+		</label>
+	</div>
+
+	<p class="projects__count" aria-live="polite">
+		{{ 'projects.resultCount' | translate: { count: filteredProjects().length } }}
+	</p>
+
+	@if (filteredProjects().length) {
+		<div class="projects__grid">
+			@for (project of filteredProjects(); track project.id) {
+				<app-project-card [project]="project" [featured]="featuredProjectIds.has(project.id)" />
+			}
+		</div>
+	} @else {
+		<p class="projects__empty">{{ 'projects.noResults' | translate }}</p>
+	}
+</section>

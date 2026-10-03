@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { TabsModule } from 'primeng/tabs';
-import { ProfessionalExperienceTimeline } from '../Timelines/professional-experience-timeline/professional-experience-timeline';
+import { ProfessionalExperienceTimeline } from '../../../Timelines/professional-experience-timeline/professional-experience-timeline';
 import { NgComponentOutlet } from '@angular/common';
-import { FormationTimeline } from '../Timelines/formation-timeline/formation-timeline';
-import { ContactInfos } from '../contact-infos/contact-infos';
-import { ProjectsTabContent } from '../Projects/projects-tab-content/projects-tab-content';
+import { FormationTimeline } from '../../../Timelines/formation-timeline/formation-timeline';
+import { ContactInfos } from '../../../contact-infos/contact-infos';
+import { ProjectsTabContent } from '../projects-tab-content';
 import { TranslatePipe } from '@ngx-translate/core';
 
 
