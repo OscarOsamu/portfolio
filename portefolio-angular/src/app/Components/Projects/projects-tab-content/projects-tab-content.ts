@@ -26,7 +26,8 @@ export class ProjectsTabContent {
   });
   readonly technologies = computed<MultiSelectOption[]>(() => {
     const language = this.activeLanguage();
-    return Object.values(Technology)
+    const usedTechnologies = new Set(this.projectsService.getAllProjects().flatMap(project => project.technologies));
+    return [...usedTechnologies]
       .map(value => ({ value, label: value }))
       .sort((left, right) => left.label.localeCompare(right.label, language, { sensitivity: 'base' }));
   });

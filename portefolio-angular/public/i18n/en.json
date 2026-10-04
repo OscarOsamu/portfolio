@@ -60,6 +60,11 @@
     "noResults": "No projects match these filters.",
     "featured": "Featured",
     "technologies": "Project technologies",
+    "enlargeImage": "View image larger",
+    "imageViewer": "Project image viewer",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "closeImage": "Close image viewer",
     "sourceCode": "View source",
     "liveDemo": "Live demo"
   },
@@ -90,6 +95,48 @@
   "project": {
     "portfolio": {
       "description": "A personal portfolio website built with Angular, showcasing my projects and skills."
+    },
+    "myfind" : {
+      "description" : "Reimplement the find(2) function in C."
+    },
+    "malloc" : {
+      "description" : "Reimplement the malloc(3), realloc(3), calloc(3) and free(3) function in C in one week."
+    },
+    "httpd" : {
+      "description" : "Implement a server that handle HTTPD request."
+    },
+    "libzork" : {
+      "description" : "Implement of the game zork with a codebase in 2 days."
+    },
+    "42sh" : {
+      "description" : "Implementation of a Bash POSIX in groups of four from scratch in four weeks."
+    },
+    "tiger" : {
+      "description" : "Seven weeks project to implement a compilator for the Tiger language in a four-people group using a already existent codebase."
+    },
+    "eplace" : {
+      "description" : "Connection with OIDC to a server to recreate the r/place, using Postman, Swagger and Socket.IO."
+    },
+    "ping" : {
+      "description" : "Implementation of a IDE in full stack in a group of 4\nBearing in mind accessibility and requirements of the customer (StarTrek themed IDE for a beginer in Python visually impaired."
+    },
+    "tinyx" : {
+      "description" : "X (ex-twitter) like backend service, in a group of 14 with K8s deployment\nResponsible for K8s deployment."
+    },
+    "pybd" : {
+      "description" : "Python (NumPy, Dash, Pandas, Scikit-learn), Docker, Bash, CSV: \nProcessing Paris stock market data to visualize various metrics (Bollinger Bands, trend lines, raw data) from a large dataset."
+    },
+    "pfee" : {
+      "description" : "Bichât Hospital - APHP + INSERM\nModelisation / Animation Blender of medical supplies and photogrammetry of operating room."
+    },
+    "iren" : {
+      "description" : "Boat image classification (16x16px) using a neural network on Kaggle."
+    },
+    "interops" : {
+      "description" : "POC for appointment-booking software (similar to Doctolib) implementing a subset of the MOS and NOS, while adhering to interoperability standards such as HL7 FHIR."
+    },
+    "miccai" : {
+      "description" : "Segmentation of brain regions in MRI scans of 6-month-old children on Colab, using 10 patient volumes containing T1, T2, and ground-truth data.\nA cascaded U-Net architecture was employed (identifying brain location, then separating CSF from gray and white matter, followed by separating gray matter from white matter), with the Dice score used for validation.\nThe dataset comprised 6 training, 2 testing, and 2 validation patients."
     }
   }
 }

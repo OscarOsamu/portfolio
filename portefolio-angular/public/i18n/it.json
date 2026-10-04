@@ -60,6 +60,11 @@
     "noResults": "Nessun progetto corrisponde a questi filtri.",
     "featured": "In evidenza",
     "technologies": "Tecnologie del progetto",
+    "enlargeImage": "Ingrandisci immagine",
+    "imageViewer": "Visualizzatore immagini del progetto",
+    "previousImage": "Immagine precedente",
+    "nextImage": "Immagine successiva",
+    "closeImage": "Chiudi visualizzatore",
     "sourceCode": "Vedi il codice sorgente",
     "liveDemo": "Demo online"
   },
@@ -90,6 +95,39 @@
   "project": {
     "portfolio": {
       "description": "Un portfolio personale realizzato con Angular per presentare i miei progetti e le mie competenze."
+    },
+        "myfind" : {
+      "description" : ""
+    },
+    "malloc" : {
+      "description" : ""
+    },
+    "httpd" : {
+      "description" : ""
+    },
+    "libzork" : {
+      "description" : ""
+    },
+    "42sh" : {
+      "description" : ""
+    },
+    "tiger" : {
+      "description" : ""
+    },
+    "eplace" : {
+      "description" : ""
+    },
+    "ping" : {
+      "description" : ""
+    },
+    "tinyx" : {
+      "description" : ""
+    },
+    "pybd" : {
+      "description" : ""
+    },
+    "pfee" : {
+      "description" : ""
     }
   }
 }

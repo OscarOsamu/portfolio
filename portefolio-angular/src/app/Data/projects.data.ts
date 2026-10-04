@@ -14,6 +14,152 @@ export const projectsData: Project[] = [
     repoLink: 'https://github.com/OscarOsamu/portfolio',
     demoLink: 'https://oscarosamu.github.io/portfolio/',
   },
+  {
+    id: 2,
+    name: 'MyFind',
+    descriptionKey : 'project.myfind.description',
+    category: [],
+    technologies: [Technology.C],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/10/2023'),
+    endDate : new Date('02/10/2023')
+  },
+  {
+    id: 3,
+    name: 'Malloc',
+    descriptionKey : 'project.malloc.description',
+    category: [],
+    technologies: [Technology.C],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/11/2023'),
+    endDate : new Date('02/11/2023')
+  },
+  {
+    id: 4,
+    name: 'HTTPD',
+    descriptionKey : 'project.httpd.description',
+    category: [],
+    technologies: [Technology.C],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/12/2023'),
+    endDate : new Date('02/12/2023')
+  },
+  {
+    id: 5,
+    name: 'Libzork',
+    descriptionKey : 'project.libzork.description',
+    category: [],
+    technologies: [Technology.CPP, Technology.JSON],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/03/2024'),
+    endDate : new Date('02/03/2024')
+  },
+  {
+    id: 6,
+    name: '42sh',
+    descriptionKey : 'project.42sh.description',
+    category: [],
+    technologies: [Technology.C],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/01/2024'),
+    endDate : new Date('02/01/2024')
+  },
+  {
+    id: 7,
+    name: 'Tiger compiler',
+    descriptionKey : 'project.tiger.description',
+    category: [Category.Frontend],
+    technologies: [Technology.CPP, Technology.Flex, Technology.Bison, Technology.LLVM],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/03/2024'),
+    endDate : new Date('02/04/2024')
+  },
+  {
+    id: 8,
+    name: 'E/place',
+    descriptionKey : 'project.eplace.description',
+    category: [],
+    technologies: [Technology.JS, Technology.OIDC, Technology.Node],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/05/2024'),
+    endDate : new Date('02/05/2024')
+  },
+  {
+    id: 9,
+    name: 'Ping',
+    descriptionKey : 'project.ping.description',
+    category: [Category.Backend, Category.Frontend],
+    technologies: [Technology.Java, Technology.React],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/06/2024'),
+    endDate : new Date('02/07/2024')
+  },
+    {
+    id: 10,
+    name: 'TinyX',
+    descriptionKey : 'project.tinyx.description',
+    category: [Category.Backend],
+    technologies: [Technology.Java, Technology.NoSQL, Technology.K8s, Technology.Docker],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/03/2025'),
+    endDate : new Date('02/04/2025')
+  },
+    {
+    id: 11,
+    name: 'Python Big Data',
+    descriptionKey : 'project.pybd.description',
+    category: [Category.Frontend, Category.Data],
+    technologies: [ Technology.Python],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/06/2025'),
+    endDate : new Date('02/07/2025')
+  },
+    {
+    id: 12,
+    name: 'PFEE',
+    descriptionKey : 'project.pfee.description',
+    category: [],
+    technologies: [Technology.Blender],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/07/2025'),
+    endDate : new Date('02/01/2026')
+  },
+  {
+    id: 13,
+    name: 'IREN',
+    descriptionKey : 'project.iren.description',
+    category: [Category.AI],
+    technologies: [Technology.Python],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/07/2025'),
+    endDate : new Date('02/01/2026')
+
+  },
+    {
+    id: 14,
+    name: 'Interops',
+    descriptionKey : 'project.interops.description',
+    category: [Category.Frontend],
+    technologies: [Technology.TS, Technology.Keycloak, Technology.Docker, Technology.Django, Technology.React, Technology.OIDC],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/07/2025'),
+    endDate : new Date('02/01/2026')
+  },
+    {
+    id: 15,
+    name: 'MICCAI',
+    descriptionKey : 'project.miccai.description',
+    category: [Category.AI],
+    technologies: [Technology.Python],
+    repoStatus: RepoStatus.None,
+    startDate: new Date('01/07/2025'),
+    endDate : new Date('02/01/2026'),
+    images: [
+      'assets/projects/miccai/patient9_final_pred.png',
+      'assets/projects/miccai/patient9_VT.png',
+      'assets/projects/miccai/patient9_diff.png',
+    ]
+  },
 ];
 
-export const featuredProjectIds: number[] = [1];
+export const featuredProjectIds: number[] = [1, 7, 10, 11, 12, 14];

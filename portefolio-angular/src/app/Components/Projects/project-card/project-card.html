@@ -1,13 +1,25 @@
 <article class="project-card">
-	@if (project().image) {
-		<img class="project-card__image" [src]="project().image" [alt]="project().name" />
+	@let images = project().images ?? [];
+	@if (images.length) {
+		<div class="project-card__carousel">
+			<button class="project-card__image-button" type="button" (click)="openImageViewer()" [attr.aria-label]="'projects.enlargeImage' | translate">
+				<img class="project-card__image" [src]="images[imageIndex()]" [alt]="project().name" />
+			</button>
+			@if (images.length > 1) {
+				<button class="project-card__carousel-button project-card__carousel-button--previous" type="button" (click)="changeImage(-1)" [attr.aria-label]="'projects.previousImage' | translate">&#x2039;</button>
+				<span class="project-card__image-count" aria-live="polite">{{ imageIndex() + 1 }} / {{ images.length }}</span>
+				<button class="project-card__carousel-button project-card__carousel-button--next" type="button" (click)="changeImage(1)" [attr.aria-label]="'projects.nextImage' | translate">&#x203A;</button>
+			}
+		</div>
 	}
 
 	<div class="project-card__content">
 		<div class="project-card__topline">
+      @if (repoStatus.None !== project().repoStatus){
 			<span class="project-card__status" [class.project-card__status--public]="project().repoStatus === repoStatus.Public">
 				{{ repoStatusLabelKey() | translate }}
 			</span>
+    }
 			@if (featured()) {
 				<span class="project-card__featured">{{ 'projects.featured' | translate }}</span>
 			}
@@ -43,3 +55,17 @@
 		}
 	</div>
 </article>
+
+@if (imageViewerOpen()) {
+	<div class="project-image-viewer" role="dialog" aria-modal="true" [attr.aria-label]="'projects.imageViewer' | translate" (click)="closeImageViewer()">
+		<button class="project-image-viewer__close" type="button" (click)="closeImageViewer()" [attr.aria-label]="'projects.closeImage' | translate">&times;</button>
+		@if (images.length > 1) {
+			<button class="project-image-viewer__navigation project-image-viewer__navigation--previous" type="button" (click)="$event.stopPropagation(); changeImage(-1)" [attr.aria-label]="'projects.previousImage' | translate">&#x2039;</button>
+		}
+		<img class="project-image-viewer__image" [src]="images[imageIndex()]" [alt]="project().name" (click)="$event.stopPropagation()" />
+		<span class="project-image-viewer__count">{{ imageIndex() + 1 }} / {{ images.length }}</span>
+		@if (images.length > 1) {
+			<button class="project-image-viewer__navigation project-image-viewer__navigation--next" type="button" (click)="$event.stopPropagation(); changeImage(1)" [attr.aria-label]="'projects.nextImage' | translate">&#x203A;</button>
+		}
+	</div>
+}

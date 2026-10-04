@@ -16,6 +16,7 @@ export enum Technology {
   SQL = "SQL",
   MongoDB = "MongoDB",
   MySQL = "MySQL",
+  NoSQL = "NoSQL",
   PostgreSQL = "PostgreSQL",
   Firebase = "Firebase",
   AWS = "AWS",
@@ -24,4 +25,11 @@ export enum Technology {
   Bash = "Bash",
   Redis = "Redis",
   Keycloak = "Keycloak",
+  RestAPI = "REST API",
+  Bison = "Bison",
+  JSON = "JSON",
+  Flex = "Flex",
+  LLVM = "LLVM",
+  OIDC = "OIDC",
+  Blender = "Blender"
 }

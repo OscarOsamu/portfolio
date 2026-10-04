@@ -9,7 +9,9 @@ export interface Project {
   category : Category[],
   technologies : Technology[],
   repoStatus : RepoStatus,
+  startDate? : Date,
+  endDate? : Date,
   repoLink? : string,
   demoLink? : string,
-  image? : string,
+  images? : string[],
 }

@@ -60,6 +60,11 @@
     "noResults": "Aucun projet ne correspond à ces filtres.",
     "featured": "À la une",
     "technologies": "Technologies du projet",
+    "enlargeImage": "Agrandir l'image",
+    "imageViewer": "Visionneuse d'images du projet",
+    "previousImage": "Image précédente",
+    "nextImage": "Image suivante",
+    "closeImage": "Fermer la visionneuse",
     "sourceCode": "Voir le code source",
     "liveDemo": "Démo en ligne"
   },
@@ -90,6 +95,51 @@
   "project": {
     "portfolio": {
       "description": "Un portfolio personnel réalisé avec Angular pour présenter mes projets et mes compétences."
+    },
+    "myfind" : {
+      "description" : "Réimplementation de la fonction find(2) en C."
+    },
+    "malloc" : {
+      "description" : "Réimplementation des fonctions malloc(3), realloc(3), calloc(3) et free(3) en C en une semaine."
+    },
+    "httpd" : {
+      "description" : "Implémentation d'un serveur gérant des requêtes HTTPD."
+    },
+    "libzork" : {
+      "description" : "Implémentation du jeu zork en 2 jours à l'aide d'une base de code."
+    },
+    "42sh" : {
+      "description" : "Implémentation d'un bash posix en groupe de quatre."
+    },
+    "tiger" : {
+      "description" : "Projet de sept semaines pour implémenter un compilateur pour le language Tiger en groupe de quatre en s'appuyant sur une base de code fournie."
+    },
+    "eplace" : {
+      "description" : "Connexion à une API en utilisant OIDC pour recreer la r/place, à l'aide de Postman, Swagger et Socket.IO."
+    },
+    "ping" : {
+      "description" : "Implémentation d'un IDE en group de 4\nEn prenant en compte l'accessibilité et les demandes du client (IDE StarTrek pour un débutant en python malvoyant)."
+    },
+    "tinyx" : {
+      "description" : "Backend  d'un service similaire a X (ex-twitter), en groupe de 14 avec un deploiment k8s\nResponsable du deploiment K8s."
+    },
+    "pybd" : {
+      "description" : "Python (Numpy/Dash/Pandas/Sklearn), Docker, Bash, CSV : \nTraitement de données d'actions de la bourse de Paris afin d'afficher diverses informations (bandes de Bollinger, courbes, données brutes) à partir d'un ensemble de données important."
+    },
+    "pfee" : {
+      "description" : "Hôpital Bichât - APHP + INSERM\nModélisation / Animation Blender de matériel médical et photogrammétrie du bloc opératoire."
+    },
+    "iren" : {
+      "description" : "Classification d'images de bateaux (16x16px) à l'aide d'un réseau de neurones sur Kaggle."
+    },
+    "interops" : {
+      "description" : "POC d'un logiciel de prise de rendez-vous type Doctolib implémentant un sous-ensemble du MOS et du NOS en respectant les normes d'interopérabilité tel H7 FHIR."
+    },
+    "miccai" : {
+      "description" : "Segmentation de zones cérébrales sur des images d'IRM d'enfants de 6 mois sur Colab à partir de 10 volumes de patients contenant T1, T2 et vérité terrain.\nUtilisation d'un réseau en cascade de UNET (identification de l'emplacement du cerveau puis séparation entre LCR et matière grise+blanche puis entre matière grise et matière blanche) et score de DICE pour valider.\n6 patients d'entrainements, 2 de test et de 2 de validation."
+    },
+    "ero2" : {
+      "description" : ""
     }
   }
 }
