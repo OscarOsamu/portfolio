@@ -22,7 +22,9 @@
   "common": {
     "present": "Present",
     "language": "Language",
-    "projectCard": "Project card"
+    "projectCard": "Project card",
+    "switchToDarkMode": "Switch to dark mode",
+    "switchToLightMode": "Switch to light mode"
   },
   "locale": {
     "en": "English",

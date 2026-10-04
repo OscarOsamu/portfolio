@@ -3,11 +3,52 @@
 /* ...existing code... */
 
 :root
-  --app-page-background: #f6f8fc;
-  --app-surface: #ffffff;
-  --app-border: #e5eaf2;
-  --app-shadow: 0 8px 24px rgb(15 23 42 / 6%);
-  --app-radius: 1rem;
+  --palette-page: #f4f7fc
+  --palette-surface: #ffffff
+  --palette-text: #18243a
+  --palette-muted: #3f5069
+  --palette-accent: #087769
+  --palette-technology: #005eb8
+  --palette-category: #a94300
+  --palette-action-base: #071c22
+  --palette-shadow: rgb(18 37 65 / 12%)
+
+  --app-page-background: var(--palette-page)
+  --app-surface: var(--palette-surface)
+  --app-text: var(--palette-text)
+  --app-muted: var(--palette-muted)
+  --app-accent: var(--palette-accent)
+  --app-border: color-mix(in srgb, var(--app-text) 16%, var(--app-surface))
+  --app-border-strong: color-mix(in srgb, var(--app-text) 28%, var(--app-surface))
+  --app-surface-subtle: color-mix(in srgb, var(--app-accent) 5%, var(--app-surface))
+  --app-surface-hover: color-mix(in srgb, var(--app-accent) 11%, var(--app-surface))
+  --app-surface-panel: color-mix(in srgb, var(--app-accent) 3%, var(--app-page-background))
+  --app-accent-soft: color-mix(in srgb, var(--app-accent) 11%, var(--app-surface))
+  --app-accent-border: color-mix(in srgb, var(--app-accent) 35%, var(--app-surface))
+  --app-action-background: color-mix(in srgb, var(--app-accent) 45%, var(--palette-action-base))
+  --app-action-hover: color-mix(in srgb, var(--app-accent) 35%, var(--palette-action-base))
+  --app-action-text: #ffffff
+  --app-overlay: rgb(7 18 16 / 94%)
+  --app-overlay-control: rgb(20 35 32 / 78%)
+  --app-overlay-border: rgb(255 255 255 / 75%)
+  --app-on-overlay: #ffffff
+  --app-shadow: 0 8px 24px var(--palette-shadow)
+  --app-radius: 1rem
+  --app-tag-height: 1.8rem
+  --app-tag-radius: 999px
+  --app-tag-font-size: 0.75rem
+  --app-tag-padding: 0 0.65rem
+  --app-tag-neutral-bg: var(--app-surface-subtle)
+  --app-tag-neutral-border: var(--app-border)
+  --app-tag-neutral-text: var(--app-text)
+  --app-tag-tech: var(--palette-technology)
+  --app-tag-category: var(--palette-category)
+  --app-tag-tech-bg: color-mix(in srgb, var(--app-tag-tech) 16%, var(--app-surface))
+  --app-tag-tech-border: color-mix(in srgb, var(--app-tag-tech) 44%, var(--app-surface))
+  --app-tag-category-bg: color-mix(in srgb, var(--app-tag-category) 16%, var(--app-surface))
+  --app-tag-category-border: color-mix(in srgb, var(--app-tag-category) 44%, var(--app-surface))
+  --app-status-public: var(--app-accent)
+  --app-status-private: var(--app-muted)
 
 
 html
@@ -20,7 +61,7 @@ body
   min-height: 100vh;
   margin: 20;
   background: var(--app-page-background);
-  color: var(--p-text-color, #1f2937);
+  color: var(--app-text);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +75,7 @@ app-root
 
 
 :where(h1, h2, h3, h4)
-  color: var(--p-text-color, #111827);
+  color: var(--app-text);
   letter-spacing: -0.025em;
   line-height: 1.2;
 
@@ -42,7 +83,7 @@ app-root
 
 
 :where(a)
-  color: var(--p-primary-color, #4f46e5);
+  color: var(--app-accent)
   text-underline-offset: 0.2em;
 
 
@@ -57,7 +98,7 @@ app-root
 
 
 :where(:focus-visible)
-  outline: 3px solid color-mix(in srgb, var(--p-primary-color, #4f46e5) 35%, transparent);
+  outline: 3px solid color-mix(in srgb, var(--app-accent) 55%, transparent)
   outline-offset: 2px;
 
 
@@ -68,19 +109,6 @@ app-root
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
 
-
-:root
-  --app-tag-height: 1.8rem
-  --app-tag-radius: 999px
-  --app-tag-font-size: 0.75rem
-  --app-tag-padding: 0 0.65rem
-
-  --app-tag-neutral-bg: #f1f5f9
-  --app-tag-neutral-border: #dbe3ed
-  --app-tag-neutral-text: #334155
-
-  --app-tag-tech: #2563eb
-  --app-tag-category: #7c3aed
 
 .app-tag
   display: inline-flex
@@ -100,13 +128,13 @@ app-root
   white-space: nowrap
 
 .app-tag--technology
-  --app-tag-bg: color-mix(in srgb, var(--app-tag-tech) 8%, white)
-  --app-tag-border: color-mix(in srgb, var(--app-tag-tech) 24%, white)
+  --app-tag-bg: var(--app-tag-tech-bg)
+  --app-tag-border: var(--app-tag-tech-border)
   --app-tag-color: var(--app-tag-tech)
 
 .app-tag--category
-  --app-tag-bg: color-mix(in srgb, var(--app-tag-category) 9%, white)
-  --app-tag-border: color-mix(in srgb, var(--app-tag-category) 26%, white)
+  --app-tag-bg: var(--app-tag-category-bg)
+  --app-tag-border: var(--app-tag-category-border)
   --app-tag-color: var(--app-tag-category)
 
 .app-tag--language
@@ -127,10 +155,24 @@ app-root
   min-width: var(--app-tag-height)
   height: var(--app-tag-height)
   padding: var(--app-tag-padding)
-  border: 1px solid color-mix(in srgb, var(--tag-accent, #64748b) 25%, white)
+  border: 1px solid color-mix(in srgb, var(--tag-accent, var(--app-accent)) 35%, var(--app-surface))
   border-radius: var(--app-tag-radius)
-  background: color-mix(in srgb, var(--tag-accent, #64748b) 9%, white)
-  color: var(--tag-accent, #475569)
+  background: color-mix(in srgb, var(--tag-accent, var(--app-accent)) 9%, var(--app-surface))
+  color: var(--tag-accent, var(--app-accent))
   font-size: var(--app-tag-font-size)
   font-weight: 600
   line-height: 1
+
+:root.my-app-dark
+  color-scheme: dark
+  --palette-page: #0c1422
+  --palette-surface: #172338
+  --palette-text: #f3f7ff
+  --palette-muted: #c1cde0
+  --palette-accent: #45dfbb
+  --palette-technology: #72c7ff
+  --palette-category: #ffc16b
+  --palette-action-base: #071c22
+  --palette-shadow: rgb(0 0 0 / 42%)
+  --app-overlay: rgb(0 0 0 / 94%)
+  --app-overlay-control: rgb(0 0 0 / 70%)

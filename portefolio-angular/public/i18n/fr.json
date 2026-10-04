@@ -22,7 +22,9 @@
   "common": {
     "present": "Aujourd'hui",
     "language": "Langue",
-    "projectCard": "Carte de projet"
+    "projectCard": "Carte de projet",
+    "switchToDarkMode": "Activer le mode sombre",
+    "switchToLightMode": "Activer le mode clair"
   },
   "locale": {
     "en": "Anglais",

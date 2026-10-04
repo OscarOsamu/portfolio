@@ -8,7 +8,8 @@
     (click)="toggleMenu()"
   >
     <i class="pi pi-globe" aria-hidden="true"></i>
-    <app-language-tag [language]="currentLanguage().language" />
+    <span class="locale-switcher__code">{{ currentLocale().toUpperCase() }}</span>
+    <i class="pi pi-chevron-down locale-switcher__chevron" aria-hidden="true"></i>
   </button>
 
   @if (isMenuOpen()) {
@@ -27,4 +28,19 @@
       }
     </div>
   }
+
+  <button
+    class="locale-switcher__theme"
+    type="button"
+    [attr.aria-label]="(isDarkMode() ? 'common.switchToLightMode' : 'common.switchToDarkMode') | translate"
+    [attr.title]="(isDarkMode() ? 'common.switchToLightMode' : 'common.switchToDarkMode') | translate"
+    (click)="toggleTheme()"
+  >
+  @if (isDarkMode()){
+  <svg data-p-icon='sun'></svg>
+  }
+  @else {
+     <svg data-p-icon='moon'></svg>
+  }
+  </button>
 </div>

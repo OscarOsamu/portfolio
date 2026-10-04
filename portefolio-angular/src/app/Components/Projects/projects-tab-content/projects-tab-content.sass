@@ -1,7 +1,7 @@
 .projects
 	margin: 0 auto
 	padding: 1.75rem clamp(1rem, 3vw, 2rem) 2.5rem
-	color: #1d2b2b
+	color: var(--app-text)
 
 .projects__toolbar
 	display: flex
@@ -12,10 +12,10 @@
 .projects__clear
 	flex: 0 0 auto
 	padding: 0.65rem 0.9rem
-	border: 1px solid #b8cbc6
+	border: 1px solid var(--app-border-strong)
 	border-radius: 0.4rem
-	background: #fff
-	color: #245c56
+	background: var(--app-surface)
+	color: var(--app-accent)
 	font: inherit
 	font-size: 0.875rem
 	font-weight: 650
@@ -23,8 +23,8 @@
 	transition: background-color 150ms ease, border-color 150ms ease
 
 	&:hover
-		border-color: #26736b
-		background: #edf7f4
+		border-color: var(--app-accent)
+		background: var(--app-surface-hover)
 
 .projects__filters
 	display: grid
@@ -32,14 +32,14 @@
 	align-items: end
 	gap: 1rem
 	padding: 1.1rem
-	border: 1px solid #d8e4df
+	border: 1px solid var(--app-border)
 	border-radius: 0.55rem
-	background: #f0f6f3
+	background: var(--app-surface-panel)
 
 .projects__field
 	display: grid
 	gap: 0.4rem
-	color: #36514c
+	color: var(--app-text)
 	font-size: 0.78rem
 	font-weight: 700
 
@@ -47,10 +47,10 @@
 		width: 100%
 		min-height: 2.65rem
 		padding: 0.55rem 2rem 0.55rem 0.7rem
-		border: 1px solid #c5d5cf
+		border: 1px solid var(--app-border)
 		border-radius: 0.35rem
-		background: #fff
-		color: #203b39
+		background: var(--app-surface)
+		color: var(--app-text)
 		font: inherit
 		font-size: 0.9rem
 
@@ -70,7 +70,7 @@
 	min-height: 2.65rem
 	align-items: center
 	gap: 0.55rem
-	color: #294a45
+	color: var(--app-text)
 	font-size: 0.875rem
 	font-weight: 650
 	white-space: nowrap
@@ -79,11 +79,11 @@
 	input
 		width: 1.1rem
 		height: 1.1rem
-		accent-color: #26736b
+		accent-color: var(--app-accent)
 
 .projects__count
 	margin: 1.25rem 0 0.8rem
-	color: #61736f
+	color: var(--app-muted)
 	font-size: 0.82rem
 
 .projects__grid
@@ -93,9 +93,9 @@
 
 .projects__empty
 	padding: 2rem 1rem
-	border: 1px dashed #b8cbc6
+	border: 1px dashed var(--app-border-strong)
 	border-radius: 0.5rem
-	color: #61736f
+	color: var(--app-muted)
 	text-align: center
 
 @media (max-width: 760px)

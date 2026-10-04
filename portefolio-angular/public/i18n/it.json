@@ -22,7 +22,9 @@
   "common": {
     "present": "Presente",
     "language": "Lingua",
-    "projectCard": "Scheda progetto"
+    "projectCard": "Scheda progetto",
+    "switchToDarkMode": "Attiva la modalità scura",
+    "switchToLightMode": "Attiva la modalità chiara"
   },
   "locale": {
     "en": "Inglese",

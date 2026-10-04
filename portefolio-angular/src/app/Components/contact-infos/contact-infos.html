@@ -1,36 +1,35 @@
-<!-- TODO : add email adress, phone number and linkedIn profile with icons and links -->
-<div class="flex flex-col gap-4">
-  <div class="flex items-center gap-2">
-    <i class="pi pi-envelope"></i>
-    <span>{{ 'contact.email' | translate }}</span>
+<div class="contact-info-container">
+  <div class="contact-info__text">
+    <svg data-p-icon="envelope"></svg>
+    <span>  {{ 'contact.email' | translate }}  </span>
 
     <a
       href="mailto:oscardivry@gmail.com "
       class="flex items-center gap-2 text-blue-500 hover:underline"
     >
-      <i class="pi pi-envelope"></i>
+
       <span> oscardivry@gmail.com </span>
     </a>
   </div>
-  <div class="flex items-center gap-2">
-    <i class="pi pi-phone"></i>
-    <span>{{ 'contact.phone' | translate }}</span>
+  <div class="contact-info__text">
+   <svg data-p-icon="phone"></svg>
+    <span>  {{ 'contact.phone' | translate }}  </span>
 
     <a href="tel:+33644800568" class="flex items-center gap-2 text-blue-500 hover:underline">
-      <i class="pi pi-phone"></i>
+
       <span> +33 6 44 80 05 68 </span>
     </a>
   </div>
-  <div class="flex items-center gap-2">
-    <i class="pi pi-linkedin"></i>
-    <span>{{ 'contact.linkedin' | translate }}</span>
+  <div class="contact-info__text">
+    <svg data-p-icon="linkedin"></svg>
+    <span>  {{ 'contact.linkedin' | translate }}  </span>
 
     <a
       href="https://www.linkedin.com/in/oscardivry"
       target="_blank"
       class="flex items-center gap-2 text-blue-500 hover:underline"
     >
-      <i class="pi pi-linkedin"></i>
+
       <span> Oscar Divry (https://www.linkedin.com/in/oscardivry)</span>
     </a>
   </div>

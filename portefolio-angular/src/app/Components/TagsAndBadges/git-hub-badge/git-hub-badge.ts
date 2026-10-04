@@ -24,7 +24,7 @@ import { RepoStatus } from './../../../Enums/repo-status';
           [value]="badgeLabelKey() | translate"
           [style]="{
             background: badgeColor(),
-            color: 'var(--text-color)',
+            color: 'var(--app-text)',
           }"
         />
       }
@@ -52,10 +52,10 @@ export class GitHubBadge {
   badgeColor(): string {
     switch (this.repo()) {
       case RepoStatus.Public:
-        return 'var(--public-color)';
+        return 'var(--app-status-public)';
 
       case RepoStatus.Private:
-        return 'var(--private-color)';
+        return 'var(--app-status-private)';
 
       default:
         return 'transparent';
