@@ -36,4 +36,5 @@ export enum Technology {
   Collab = "Collab",
   Kaggle = "Kaggle",
   SPARQL = "SPARQL",
+  Rocq = "Rocq"
 }

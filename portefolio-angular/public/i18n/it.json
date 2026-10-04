@@ -71,6 +71,12 @@
     "liveDemo": "Demo online"
   },
   "education": {
+    "coursework": "Corsi seguiti ({{count}})",
+    "classGroups": {
+      "core": "Nucleo comune",
+      "healthMajor": "Specializzazione in sanità e IA",
+      "options": "Opzioni"
+    },
     "epita": {
       "name": "Laurea magistrale in ingegneria informatica, con specializzazione in sanità e intelligenza artificiale",
       "description": "Il percorso si concentra sull'ingegneria del software, sugli algoritmi e sull'informatica. Il programma comprende linguaggi di programmazione, strutture dati, basi di dati e metodologie di sviluppo software, con una forte componente pratica grazie a stage e progetti. La specializzazione in sanità e intelligenza artificiale include interoperabilità, sicurezza informatica, analisi dei dati sanitari, apprendimento automatico, apprendimento profondo ed elaborazione del linguaggio naturale."
@@ -83,6 +89,18 @@
       "name": "Baccalauréat francese con il massimo dei voti",
       "description": "Indirizzi di matematica e fisica-chimica, completati con il massimo dei voti."
     }
+  },
+  "classes": {
+    "piscinec": { "name": "Corso intensivo di C", "description": "" },
+    "piscinecpp": { "name": "Corso intensivo di C++", "description": "" },
+    "piscinejava": { "name": "Corso intensivo di Java", "description": "" },
+    "piscinesql": { "name": "Corso intensivo di SQL", "description": "" },
+    "piscinejs": { "name": "Corso intensivo di JavaScript", "description": "" },
+    "interops": { "name": "Interoperabilità sanitaria", "description": "" },
+    "normeshealth": { "name": "Norme sanitarie", "description": "" },
+    "llmhealth": { "name": "Modelli linguistici di grandi dimensioni in sanità", "description": "" },
+    "codo": { "name": "CODO", "description": "" },
+    "geopo": { "name": "Geopolitica del Internet", "description": "" }
   },
   "experience": {
     "ge": {

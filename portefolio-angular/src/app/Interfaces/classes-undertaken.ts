@@ -1,6 +1,11 @@
+import { ClassStatus } from "../Enums/class-status";
+
 export interface ClassesUndertaken {
   id: number,
-  name: string,
-  description: string,
+  nameKey: string,
+  descriptionKey: string,
   technologies: string[],
+  classStatus?: ClassStatus,
+  formationId: number,
+  relatedProjectsId: number[]
 }

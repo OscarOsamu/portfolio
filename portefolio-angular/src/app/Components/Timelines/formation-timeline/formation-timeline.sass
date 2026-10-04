@@ -1,2 +1,65 @@
 :host ::ng-deep .formation-timeline  .p-timeline-event-opposite
   flex: 0.05
+
+.formation-courses
+  margin-top: 0.75rem
+  max-width: 42rem
+  border-top: 1px solid var(--p-content-border-color)
+
+.formation-courses__summary
+  padding: 0.65rem 0
+  color: var(--p-primary-color)
+  font-size: 0.875rem
+  font-weight: 600
+  cursor: pointer
+
+.formation-courses__summary:focus-visible
+  outline: 2px solid var(--p-primary-color)
+  outline-offset: 3px
+
+.formation-courses__list
+  margin: 0
+  padding: 0 0 0 1rem
+  list-style: none
+
+.formation-courses__group + .formation-courses__group
+  margin-top: 0.5rem
+  padding-top: 0.5rem
+  border-top: 1px solid var(--p-content-border-color)
+
+.formation-courses__group-title
+  margin: 0
+  color: var(--p-primary-color)
+  font-size: 0.75rem
+  font-weight: 700
+
+.formation-courses__item
+  padding: 0.75rem 0
+  border-top: 1px solid var(--p-content-border-color)
+
+.formation-courses__name
+  margin: 0
+  font-size: 0.875rem
+  font-weight: 600
+
+.formation-courses__description
+  max-width: 60ch
+  margin: 0.35rem 0 0
+  color: var(--p-text-muted-color)
+  font-size: 0.8125rem
+  line-height: 1.5
+
+.formation-courses__technologies
+  display: flex
+  flex-wrap: wrap
+  gap: 0.375rem
+  margin: 0.5rem 0 0
+  padding: 0
+  list-style: none
+
+.formation-courses__technologies li
+  padding: 0.15rem 0.45rem
+  border: 1px solid var(--p-content-border-color)
+  border-radius: 999px
+  color: var(--p-text-muted-color)
+  font-size: 0.7rem

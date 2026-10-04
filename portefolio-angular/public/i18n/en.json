@@ -71,6 +71,12 @@
     "liveDemo": "Live demo"
   },
   "education": {
+    "coursework": "Relevant coursework ({{count}}) (non-exhaustive)",
+    "classGroups": {
+      "core": "Common Core",
+      "healthMajor": "Health & AI Major",
+      "options": "Options"
+    },
     "epita": {
       "name": "Master's degree in Engineering (Computer Science), specializing in Healthcare and Artificial Intelligence",
       "description": "Focused on software engineering, algorithms, and computer science. The program covers programming languages, data structures, databases, and software development methodologies, with a strong emphasis on practical experience through internships and projects. My specialization in Healthcare and Artificial Intelligence included interoperability, cybersecurity, healthcare data analysis, machine learning, deep learning, and natural language processing."
@@ -83,6 +89,18 @@
       "name": "French Baccalaureate with Highest Honors",
       "description": "Specialized in mathematics and physics-chemistry, graduating with highest honors."
     }
+  },
+  "classes": {
+    "piscinec": { "name": "C intensive course", "description": "" },
+    "piscinecpp": { "name": "C++ intensive course", "description": "" },
+    "piscinejava": { "name": "Java intensive course", "description": "" },
+    "piscinesql": { "name": "SQL intensive course", "description": "" },
+    "piscinejs": { "name": "JavaScript intensive course", "description": "" },
+    "interops": { "name": "Healthcare interoperability", "description": "" },
+    "normeshealth": { "name": "Healthcare standards", "description": "Learning about norms of the EU and the FDA :\nClassification CE, Medical Device Recognition (MDR), medical device" },
+    "llmhealth": { "name": "Large language models in healthcare", "description": "" },
+    "codo": { "name": "Data compression", "description": "Compression algorithm such as JPEG" },
+    "geopo": { "name": "Geopolitics of the Internet", "description": "Class about the organisation and history of Internet but also about cyberwars\nPreparation of a report on the conflict between Azerbaijan and Armenia, focusing in particular on the technological and cyber warfare aspects." }
   },
   "experience": {
     "ge": {

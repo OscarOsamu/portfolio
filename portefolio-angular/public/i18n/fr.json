@@ -71,6 +71,12 @@
     "liveDemo": "Démo en ligne"
   },
   "education": {
+    "coursework": "Cours suivis ({{count}}) (non-exhaustif)",
+    "classGroups": {
+      "core": "Tronc commun",
+      "healthMajor": "Majeure santé et IA",
+      "options": "Options"
+    },
     "epita": {
       "name": "Diplôme d'ingénieur en informatique, spécialité santé et intelligence artificielle",
       "description": "Formation axée sur le génie logiciel, les algorithmes et l'informatique. Le programme couvre les langages de programmation, les structures de données, les bases de données et les méthodes de développement logiciel, avec une forte place accordée à la pratique au travers de stages et de projets. Ma spécialisation en santé et intelligence artificielle comprend l'interopérabilité, la cybersécurité, l'analyse de données de santé, l'apprentissage automatique, l'apprentissage profond et le traitement automatique du langage naturel."
@@ -83,6 +89,18 @@
       "name": "Baccalauréat avec mention Très Bien",
       "description": "Spécialités mathématiques et physique-chimie, obtenues avec la mention Très Bien."
     }
+  },
+  "classes": {
+    "piscinec": { "name": "Piscine de C", "description": "Cours intensif de C" },
+    "piscinecpp": { "name": "Piscine C++", "description": "Cours intensif de CPP" },
+    "piscinejava": { "name": "Atelier Java", "description": "Cours intensif de Java" },
+    "piscinesql": { "name": "Atelier SQL", "description": "Cours intensif de  SQL" },
+    "piscinejs": { "name": "Atelier JavaScript", "description": "Cours intensif de JavaScript" },
+    "interops": { "name": "Interopérabilité en santé", "description": "" },
+    "normeshealth": { "name": "Normes de santé", "description": "Familiarisation avec les normes de l'UE et de la FDA : \nClassification CE, Règlement relatif aux dispositifs médicaux (RDM), dispositif médical" },
+    "llmhealth": { "name": "Grands modèles de langage en santé", "description": "" },
+    "codo": { "name": "Compression de données", "description": "Apprentissage des algorithmes de compressions de données comme JPEG" },
+    "geopo": { "name": "Géopolitique de l'internet", "description": "Cours sur l'organisation et l'histoire d'Internet, mais aussi sur les cyberconflits.\nRéalisation d'un dossier sur le conflit entre l'Azerbaïdjan et l'Arménie, notamment sur le point de vue technologie et cyberguerre." }
   },
   "experience": {
     "ge": {
