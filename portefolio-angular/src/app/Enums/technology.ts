@@ -31,5 +31,9 @@ export enum Technology {
   Flex = "Flex",
   LLVM = "LLVM",
   OIDC = "OIDC",
-  Blender = "Blender"
+  Blender = "Blender",
+  JupyterNotebook = "Jupyter Notebook",
+  Collab = "Collab",
+  Kaggle = "Kaggle",
+  SPARQL = "SPARQL",
 }

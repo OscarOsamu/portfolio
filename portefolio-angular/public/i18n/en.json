@@ -124,19 +124,31 @@
       "description" : "X (ex-twitter) like backend service, in a group of 14 with K8s deployment\nResponsible for K8s deployment."
     },
     "pybd" : {
-      "description" : "Python (NumPy, Dash, Pandas, Scikit-learn), Docker, Bash, CSV: \nProcessing Paris stock market data to visualize various metrics (Bollinger Bands, trend lines, raw data) from a large dataset."
+      "description" : "Python (NumPy, Dash, Pandas, Scikit-learn), CSV: \nProcessing Paris stock market data to visualize various metrics (Bollinger Bands, trend lines, raw data) from a large dataset."
     },
     "pfee" : {
       "description" : "Bichât Hospital - APHP + INSERM\nModelisation / Animation Blender of medical supplies and photogrammetry of operating room."
     },
     "iren" : {
-      "description" : "Boat image classification (16x16px) using a neural network on Kaggle."
+      "description" : "Boat image classification (32x32px) using a neural network on Kaggle."
     },
     "interops" : {
       "description" : "POC for appointment-booking software (similar to Doctolib) implementing a subset of the MOS and NOS, while adhering to interoperability standards such as HL7 FHIR."
     },
     "miccai" : {
       "description" : "Segmentation of brain regions in MRI scans of 6-month-old children on Colab, using 10 patient volumes containing T1, T2, and ground-truth data.\nA cascaded U-Net architecture was employed (identifying brain location, then separating CSF from gray and white matter, followed by separating gray matter from white matter), with the Dice score used for validation.\nThe dataset comprised 6 training, 2 testing, and 2 validation patients."
+    },
+    "agentic" : {
+      "description" : "PDF analysis platform (local Ollama, or remote Hugging Face/OpenAI API)\nStreamlit/Python frontend lead and cost tracking display\nBackend (FastAPI + RAG + agents), session memory"
+    },
+    "ero2" : {
+      "description" : "Case study in a group of 4 of the arrivals on an EPITA serveur hosting a \"moulinette\" (grading tool for projects running a testsuite). \nModelising the situation as Channel and Dams, and Waterfall. \nDoing a field investigation for real data."
+    },
+    "angular_first_app_tuto" : {
+      "description" : "Official Angular Tutorial to learn how to use it"
+    },
+    "uniprot_project_graph" : {
+      "description" : "Prediction of protein-protein links extracted from UniProt (The Universal Protein Resource) using graph embedding models (TransE, DistMult, ComplEx, RotatE).\nExtraction of at least 20,000 triplets via SPARQL."
     }
   }
 }

@@ -9,6 +9,7 @@ export interface Project {
   category : Category[],
   technologies : Technology[],
   repoStatus : RepoStatus,
+  priority? : number,
   startDate? : Date,
   endDate? : Date,
   repoLink? : string,

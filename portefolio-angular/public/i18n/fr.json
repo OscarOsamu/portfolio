@@ -118,28 +118,37 @@
       "description" : "Connexion à une API en utilisant OIDC pour recreer la r/place, à l'aide de Postman, Swagger et Socket.IO."
     },
     "ping" : {
-      "description" : "Implémentation d'un IDE en group de 4\nEn prenant en compte l'accessibilité et les demandes du client (IDE StarTrek pour un débutant en python malvoyant)."
+      "description" : "Implémentation d'un IDE en groupe de 4\nEn prenant en compte l'accessibilité et les demandes du client (IDE StarTrek pour un débutant en python malvoyant)."
     },
     "tinyx" : {
-      "description" : "Backend  d'un service similaire a X (ex-twitter), en groupe de 14 avec un deploiment k8s\nResponsable du deploiment K8s."
+      "description" : "Backend d'un service similaire a X (ex-twitter), en groupe de 14 avec un déploiment k8s\nResponsable du déploiment K8s."
     },
     "pybd" : {
-      "description" : "Python (Numpy/Dash/Pandas/Sklearn), Docker, Bash, CSV : \nTraitement de données d'actions de la bourse de Paris afin d'afficher diverses informations (bandes de Bollinger, courbes, données brutes) à partir d'un ensemble de données important."
+      "description" : "Python (Numpy/Dash/Pandas/Sklearn), CSV : \nTraitement de données d'actions de la bourse de Paris afin d'afficher diverses informations (bandes de Bollinger, courbes, données brutes) à partir d'un ensemble de données important."
     },
     "pfee" : {
       "description" : "Hôpital Bichât - APHP + INSERM\nModélisation / Animation Blender de matériel médical et photogrammétrie du bloc opératoire."
     },
     "iren" : {
-      "description" : "Classification d'images de bateaux (16x16px) à l'aide d'un réseau de neurones sur Kaggle."
+      "description" : "Classification d'images de bateaux (32x32px) à l'aide d'un réseau de neurones sur Kaggle."
     },
     "interops" : {
       "description" : "POC d'un logiciel de prise de rendez-vous type Doctolib implémentant un sous-ensemble du MOS et du NOS en respectant les normes d'interopérabilité tel H7 FHIR."
     },
     "miccai" : {
-      "description" : "Segmentation de zones cérébrales sur des images d'IRM d'enfants de 6 mois sur Colab à partir de 10 volumes de patients contenant T1, T2 et vérité terrain.\nUtilisation d'un réseau en cascade de UNET (identification de l'emplacement du cerveau puis séparation entre LCR et matière grise+blanche puis entre matière grise et matière blanche) et score de DICE pour valider.\n6 patients d'entrainements, 2 de test et de 2 de validation."
+      "description" : "Segmentation de zones cérébrales sur des images d'IRM d'enfants de 6 mois sur Colab à partir de 10 volumes de patients contenant T1, T2 et vérité terrain.\nUtilisation d'un réseau en cascade de UNET (identification de l'emplacement du cerveau, puis séparation entre LCR et matière grise+blanche, puis entre matière grise et matière blanche) et score de DICE pour valider.\n6 patients d'entrainements, 2 de test et de 2 de validation."
     },
     "ero2" : {
-      "description" : ""
+      "description" : "Étude de cas, réalisée en groupe de quatre, portant sur les flux d'arrivée de requêtes vers un serveur de l'EPITA hébergeant une « moulinette » (outil de notation de projets exécutant une suite de tests). \nModélisation de la situation selon les concepts de « canaux et barrages » (Channel and Dams) et de « cascade » (Waterfall), complétée par une enquête de terrain pour recueillir des données réelles."
+    },
+    "agentic" : {
+      "description" : "Platforme d'analyse de PDF (Ollama en local, Hugging Face ou API OpenAI en distant)\nResponsable FrontEnd Steamlit Python et affichage suivi des coûts\nBackend (FastAPI + RAG + agents), mémoire de session"
+    },
+    "angular_first_app_tuto" : {
+      "description" : "Tutoriel officiel d'Angular pour apprendre à le prendre en main"
+    },
+    "uniprot_project_graph" : {
+      "description" : "Prévision de liens entre protéines extraite de UniProt (The Universal Protein Resource) à l'aide de modèles d'embeddings de graphes (TransE, DistMult, ComplEx, RotatE).\nExtraction d'au moins 20 000 triplets via SPARQL."
     }
   }
 }
