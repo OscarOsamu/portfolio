@@ -16,11 +16,12 @@ import { Download } from '@primeicons/angular/download';
 export class ContactInfos {
   private readonly translate = inject(TranslateService);
   private readonly destroyRef = inject(DestroyRef);
-  private readonly activeLanguage = signal(inject(DOCUMENT).documentElement.lang || 'en');
+  private readonly document = inject(DOCUMENT);
+  private readonly activeLanguage = signal(this.document.documentElement.lang || 'en');
 
   readonly cvUrl = computed(() => {
     const locale = this.activeLanguage() === 'fr' ? 'FR' : 'ENG';
-    return `/assets/CV/Oscar_Divry_CV_${locale}.pdf`;
+    return new URL(`assets/CV/Oscar_Divry_CV_${locale}.pdf`, this.document.baseURI).href;
   });
 
   constructor() {
