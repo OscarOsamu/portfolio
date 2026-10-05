@@ -33,4 +33,13 @@
       <span> Oscar Divry (https://www.linkedin.com/in/oscardivry)</span>
     </a>
   </div>
+  <a
+    pButton
+    class="contact-info__cv"
+    [href]="cvUrl()"
+    download
+  >
+    <svg data-p-icon="download" aria-hidden="true"></svg>
+    <span>{{ 'contact.downloadCv' | translate }}</span>
+  </a>
 </div>

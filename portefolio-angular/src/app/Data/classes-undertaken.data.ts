@@ -80,8 +80,8 @@ export const classesUndertakenData: ClassesUndertaken[] = [
     id: 9,
     nameKey : "classes.codo.name",
     descriptionKey: "classes.codo.description",
-    technologies: [Technology.SQL],
-    classStatus: ClassStatus.CoreCursus,
+    technologies: [],
+    classStatus: ClassStatus.Options,
     formationId: 1,
     relatedProjectsId: []
   },
@@ -94,4 +94,76 @@ export const classesUndertakenData: ClassesUndertaken[] = [
     formationId: 1,
     relatedProjectsId: []
   },
+    {
+    id: 11,
+    nameKey : "classes.intellectualpropriety.name",
+    descriptionKey: "classes.intellectualpropriety.description",
+    technologies: [],
+    classStatus: ClassStatus.CoreCursus,
+    formationId: 1,
+    relatedProjectsId: []
+  },
+    {
+    id: 12,
+    nameKey : "classes.lawandrgpd.name",
+    descriptionKey: "classes.lawandrgpd.description",
+    technologies: [],
+    classStatus: ClassStatus.CoreCursus,
+    formationId: 1,
+    relatedProjectsId: []
+  },
+    {
+    id: 13,
+    nameKey : "classes.cryptography.name",
+    descriptionKey: "classes.cryptography.description",
+    technologies: [],
+    classStatus: ClassStatus.CoreCursus,
+    formationId: 1,
+    relatedProjectsId: []
+  },
+    {
+    id: 14,
+    nameKey : "classes.fluxgraph.name",
+    descriptionKey: "classes.fluxgraph.description",
+    technologies: [],
+    classStatus: ClassStatus.CoreCursus,
+    formationId: 1,
+    relatedProjectsId: []
+  },
+    {
+    id: 15,
+    nameKey : "classes.compilation.name",
+    descriptionKey: "classes.compilation.description",
+    technologies: [],
+    classStatus: ClassStatus.CoreCursus,
+    formationId: 1,
+    relatedProjectsId: []
+  },
+    {
+    id: 16,
+    nameKey : "classes.tyla.name",
+    descriptionKey: "classes.tyla.description",
+    technologies: [],
+    classStatus: ClassStatus.CoreCursus,
+    formationId: 1,
+    relatedProjectsId: []
+  },
+  {
+    id: 17,
+    nameKey : "classes.verification.name",
+    descriptionKey: "classes.verification.description",
+    technologies: [Technology.Rocq],
+    classStatus: ClassStatus.CoreCursus,
+    formationId: 1,
+    relatedProjectsId: []
+  },
+  {
+    id: 18,
+    nameKey : "classes.agentic.name",
+    descriptionKey: "classes.agentic.description",
+    technologies: [],
+    classStatus: ClassStatus.HealthMajor,
+    formationId: 1,
+    relatedProjectsId: []
+  }
 ];

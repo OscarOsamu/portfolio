@@ -1,9 +1,44 @@
 .contact-info-container
-  flex: flex-col
-  gap: 4rem
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  gap: 1.25rem
 
 .contact-info__text
-  flex: items-center
-  gap: 3rem
+  display: flex
+  align-items: center
+  gap: 0.75rem
+
+.contact-info__cv
+  display: inline-flex
+  min-height: 2.9rem
+  align-items: center
+  justify-content: center
+  gap: 0.65rem
+  padding: 0.7rem 1.15rem
+  border: 1px solid var(--app-accent)
+  border-radius: 0.45rem
+  background: var(--app-action-background)
+  color: var(--app-action-text)
+  font-weight: 700
+  text-decoration: none
+  transition: background-color 150ms ease, box-shadow 150ms ease, transform 150ms ease
+
+  &:hover
+    background: var(--app-action-hover)
+    box-shadow: var(--app-shadow)
+    transform: translateY(-1px)
+
+  &:focus-visible
+    outline: 3px solid color-mix(in srgb, var(--app-accent) 55%, transparent)
+    outline-offset: 3px
+
+  svg
+    width: 1rem
+    height: 1rem
+
+@media (max-width: 480px)
+  .contact-info__cv
+    width: 100%
 
 

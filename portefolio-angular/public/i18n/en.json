@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "OD Portfolio",
+    "title": "Oscar Divry's Portfolio",
     "role": "Software Engineer",
     "welcome": "Welcome to my portfolio! Here you can find information about my projects, skills, and experience. Feel free to explore and learn more about me.",
     "availability": "I'm currently open to work and looking for my first job, so if you are interested in my profile, please don't hesitate to contact me. I would be happy to discuss potential opportunities and how I can contribute to your team."
@@ -17,7 +17,8 @@
   "contact": {
     "email": "Email:",
     "phone": "Phone:",
-    "linkedin": "LinkedIn:"
+    "linkedin": "LinkedIn:",
+    "downloadCv": "Download CV"
   },
   "common": {
     "present": "Present",
@@ -99,8 +100,16 @@
     "interops": { "name": "Healthcare interoperability", "description": "" },
     "normeshealth": { "name": "Healthcare standards", "description": "Learning about norms of the EU and the FDA :\nClassification CE, Medical Device Recognition (MDR), medical device" },
     "llmhealth": { "name": "Large language models in healthcare", "description": "" },
+    "agentic" : {"name" : "Agentification", "description" :"Learning how LLMs and Transformers work, as well as agentification patterns."},
     "codo": { "name": "Data compression", "description": "Compression algorithm such as JPEG" },
-    "geopo": { "name": "Geopolitics of the Internet", "description": "Class about the organisation and history of Internet but also about cyberwars\nPreparation of a report on the conflict between Azerbaijan and Armenia, focusing in particular on the technological and cyber warfare aspects." }
+    "geopo": { "name": "Geopolitics of the Internet", "description": "Class about the organisation and history of Internet but also about cyberwars\nPreparation of a report on the conflict between Azerbaijan and Armenia, focusing in particular on the technological and cyber warfare aspects." },
+    "intellectualpropriety" : {"name": "Intellectual property", "description": ""},
+    "lawandrgpd" : {"name": "Law and GDPR", "description": ""},
+    "cryptography" : {"name": "Cryptography", "description": "Various encryption algorithms (AES, SHA, RSA, Diffie-Hellman)"},
+    "fluxgraph" : {"name": "Graph of flux", "description": ""},
+    "compilation" : {"name": "Compilation", "description": "Theory of compiler operation, accompanied by the implementation of the Tiger project (Compiler written in C)."},
+    "tyla" : {"name": "Language's Theory", "description": "An explanation of how language automata work, as well as the logic behind parsers and lexers.\nA study of various programming languages ​​to examine their different modes of operation."},
+    "verification" : { "name": "Verification of algorithms", "description" : "Using Coq to construct proofs—logical, mathematical, or algorithmic."}
   },
   "experience": {
     "ge": {
