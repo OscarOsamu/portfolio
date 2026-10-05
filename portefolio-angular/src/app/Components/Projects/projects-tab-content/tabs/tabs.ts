@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Type } from '@angular/core';
 import { TabsModule } from 'primeng/tabs';
 import { ProfessionalExperienceTimeline } from '../../../Timelines/professional-experience-timeline/professional-experience-timeline';
 import { NgComponentOutlet } from '@angular/common';
@@ -36,7 +36,7 @@ import { TranslatePipe } from '@ngx-translate/core';
     selector: 'app-tabs',
 })
 export class Tabs{
-    tabs = [
+    tabs: { id: string; titleKey: string; contentKey: string; component: Type<unknown> }[] = [
         { id: 'tab1', titleKey: 'tabs.education', contentKey: 'tabs.educationDescription', component: FormationTimeline},
         { id: 'tab2', titleKey: 'tabs.experience', contentKey: '', component: ProfessionalExperienceTimeline},
         { id: 'tab3', titleKey: 'tabs.projects', contentKey: 'tabs.projectsDescription', component: ProjectsTabContent},
